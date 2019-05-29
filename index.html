@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+
+    <h1>To Do List</h1>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row add">
+                <div class="col-6 add1">
+                    <label for="new-task">Add Item</label>
+                </div>
+                <div class="col-6 add1">
+                    <textarea class="addNew" id="new-task" type="text" placeholder="Add new task"></textarea>
+                    <button id="addButton">Add</button>
+
+                </div>
+
+            </div>
+
+            <div class="row add">
+                <div class="col-6">
+                <h3>To Do</h3>
+                <ul id="incomplete-tasks"></ul>
+            </div>
+        </div>
+
+        <div class="row add">
+                <div class="col-6">
+                <h3>Completed</h3>
+                <ul id="completed-tasks"></ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+</body>
+
+</html>
